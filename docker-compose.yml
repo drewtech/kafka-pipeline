@@ -4,14 +4,10 @@ services:
     image: wurstmeister/zookeeper
     ports:
       - "2181:2181"
-    # networks:
-    #   - turbonet-network
   kafka:
     image: wurstmeister/kafka
     ports:
       - "9092:9092"
-    # networks:
-    #   - turbonet-network
     environment:
       KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
@@ -27,8 +23,6 @@ services:
     image: redis:latest
     ports:
       - 6379:6379
-    # networks:
-    #   - turbonet-network
     volumes:
       - ./redis.conf:/redis.conf
     command: [ "redis-server", "/redis.conf" ]
@@ -43,6 +37,3 @@ services:
     ports:
     - "8081:8081"
 
-# networks:
-#   turbonet-network:
-#     name: turbonet-network
