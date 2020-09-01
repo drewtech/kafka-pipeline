@@ -5,16 +5,16 @@ from lxml import etree
 
 consumer = KafkaConsumer(
     bootstrap_servers=["127.0.0.1:9092"], 
-    group_id="epi-transformer", 
+    group_id="xml-transformer", 
     auto_offset_reset='earliest',
     value_deserializer=lambda m: json.loads(m.decode('ascii')))
-consumer.subscribe(pattern='^xplan-site.*')
+consumer.subscribe(pattern='^my-site.*')
 
 producer = KafkaProducer(
     bootstrap_servers=['127.0.0.1:9092'])
 
-def _generate_epi_xml(message):
-    root = etree.Element("EPIDataRequest")
+def _generate_xml(message):
+    root = etree.Element("XmlRequest")
     etree.SubElement(root, "Site").text = message['site']
     etree.SubElement(root, "DoYouConsent").text = message['consent']
     return etree.tostring(root)
@@ -34,9 +34,9 @@ for message in consumer:
     print ("%s:%d:%d: key=%s value=%s" % (message.topic, message.partition,
                                         message.offset, message.key,
                                         message.value))
-    epiXml = _generate_epi_xml(message.value)
+    xml = _generate_xml(message.value)
 
-    print ("Transformed Epi: %s" % epiXml)
+    print ("Transformed Xml: %s" % xml)
 
-    producer.send('epi-fee-consent', epiXml).add_callback(on_send_success).add_errback(on_send_error)
+    producer.send('xml-topic', xml).add_callback(on_send_success).add_errback(on_send_error)
 

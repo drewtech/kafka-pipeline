@@ -17,13 +17,13 @@ def on_send_error(excp):
     # handle exception
 
 for i in range(3000):
-    site = 'xplan-site-1'
+    site = 'my-site-1'
     producer.send(site, {'site': site, 'consent': 'Okies'}).add_callback(on_send_success).add_errback(on_send_error)
 
-    site = 'xplan-site-2'
+    site = 'my-site-2'
     producer.send(site, {'site': site, 'consent': 'Nope!'}).add_callback(on_send_success).add_errback(on_send_error)
 
-    site = 'xplan-site-3'
+    site = 'my-site-3'
     producer.send(site, {'site': site, 'consent': 'No Way dude!'}).add_callback(on_send_success).add_errback(on_send_error) 
 
 producer.flush()
