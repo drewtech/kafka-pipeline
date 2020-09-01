@@ -12,28 +12,23 @@ services:
       KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_LISTENERS: ${KAFKA_LISTENERS:-PLAINTEXT://:9092}
-      KAFKA_ADVERTISED_LISTENERS: ${KAFKA_ADVERTISED_LISTENERS:-PLAINTEXT://127.0.0.1:9092}
+      KAFKA_LISTENERS: OUTSIDE://:9092,INSIDE://:29092
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://:29092,OUTSIDE://127.0.0.1:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
     depends_on:
       - zookeeper
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   
-  redis:
-    image: redis:latest
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    restart: "no"
     ports:
-      - 6379:6379
-    volumes:
-      - ./redis.conf:/redis.conf
-    command: [ "redis-server", "/redis.conf" ]
-
-  redis-commander:
-    container_name: redis-commander
-    hostname: redis-commander
-    image: rediscommander/redis-commander:latest
-    #restart: always
+      - "9000:9000"
     environment:
-    - REDIS_HOSTS=local:redis:6379
-    ports:
-    - "8081:8081"
+      KAFKA_BROKERCONNECT: "kafka:29092"
+      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
+    depends_on:
+      - "kafka"
 
