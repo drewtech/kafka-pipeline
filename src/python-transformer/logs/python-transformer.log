@@ -1,0 +1,745 @@
+[2020-09-03 20:56:09,007] {metrics.py:156} DEBUG - Added sensor with name connections-closed
+[2020-09-03 20:56:09,007] {metrics.py:156} DEBUG - Added sensor with name connections-created
+[2020-09-03 20:56:09,008] {metrics.py:156} DEBUG - Added sensor with name select-time
+[2020-09-03 20:56:09,008] {metrics.py:156} DEBUG - Added sensor with name io-time
+[2020-09-03 20:56:09,009] {client_async.py:373} DEBUG - Initiating connection to node bootstrap-0 at localhost:9092
+[2020-09-03 20:56:09,009] {metrics.py:156} DEBUG - Added sensor with name bytes-sent-received
+[2020-09-03 20:56:09,009] {metrics.py:156} DEBUG - Added sensor with name bytes-sent
+[2020-09-03 20:56:09,011] {metrics.py:156} DEBUG - Added sensor with name bytes-received
+[2020-09-03 20:56:09,011] {metrics.py:156} DEBUG - Added sensor with name request-latency
+[2020-09-03 20:56:09,012] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.bytes-sent
+[2020-09-03 20:56:09,012] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.bytes-received
+[2020-09-03 20:56:09,012] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.latency
+[2020-09-03 20:56:09,014] {conn.py:365} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+[2020-09-03 20:56:09,014] {conn.py:371} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [IPv4 ('127.0.0.1', 9092)]>: setting socket option (6, 1, 1)
+[2020-09-03 20:56:09,014] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:56:09,015] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 20:56:09,015] {conn.py:391} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: established TCP connection
+[2020-09-03 20:56:09,015] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:56:09,016] {client_async.py:281} DEBUG - Node bootstrap-0 connected
+[2020-09-03 20:56:09,016] {parser.py:59} DEBUG - Sending request ApiVersionRequest_v0()
+[2020-09-03 20:56:09,016] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 1: ApiVersionRequest_v0()
+[2020-09-03 20:56:09,117] {parser.py:59} DEBUG - Sending request MetadataRequest_v0(topics=[])
+[2020-09-03 20:56:09,118] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 2: MetadataRequest_v0(topics=[])
+[2020-09-03 20:56:09,119] {parser.py:139} DEBUG - Received correlation id: 1
+[2020-09-03 20:56:09,120] {parser.py:166} DEBUG - Processing response ApiVersionResponse_v0
+[2020-09-03 20:56:09,121] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 1 (104.38227653503418 ms): ApiVersionResponse_v0(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=8), (api_key=1, min_version=0, max_version=11), (api_key=2, min_version=0, max_version=5), (api_key=3, min_version=0, max_version=9), (api_key=4, min_version=0, max_version=4), (api_key=5, min_version=0, max_version=3), (api_key=6, min_version=0, max_version=6), (api_key=7, min_version=0, max_version=3), (api_key=8, min_version=0, max_version=8), (api_key=9, min_version=0, max_version=7), (api_key=10, min_version=0, max_version=3), (api_key=11, min_version=0, max_version=7), (api_key=12, min_version=0, max_version=4), (api_key=13, min_version=0, max_version=4), (api_key=14, min_version=0, max_version=5), (api_key=15, min_version=0, max_version=5), (api_key=16, min_version=0, max_version=4), (api_key=17, min_version=0, max_version=1), (api_key=18, min_version=0, max_version=3), (api_key=19, min_version=0, max_version=5), (api_key=20, min_version=0, max_version=4), (api_key=21, min_version=0, max_version=2), (api_key=22, min_version=0, max_version=3), (api_key=23, min_version=0, max_version=3), (api_key=24, min_version=0, max_version=1), (api_key=25, min_version=0, max_version=1), (api_key=26, min_version=0, max_version=1), (api_key=27, min_version=0, max_version=0), (api_key=28, min_version=0, max_version=3), (api_key=29, min_version=0, max_version=2), (api_key=30, min_version=0, max_version=2), (api_key=31, min_version=0, max_version=2), (api_key=32, min_version=0, max_version=3), (api_key=33, min_version=0, max_version=1), (api_key=34, min_version=0, max_version=1), (api_key=35, min_version=0, max_version=2), (api_key=36, min_version=0, max_version=2), (api_key=37, min_version=0, max_version=2), (api_key=38, min_version=0, max_version=2), (api_key=39, min_version=0, max_version=2), (api_key=40, min_version=0, max_version=2), (api_key=41, min_version=0, max_version=2), (api_key=42, min_version=0, max_version=2), (api_key=43, min_version=0, max_version=2), (api_key=44, min_version=0, max_version=1), (api_key=45, min_version=0, max_version=0), (api_key=46, min_version=0, max_version=0), (api_key=47, min_version=0, max_version=0), (api_key=48, min_version=0, max_version=0), (api_key=49, min_version=0, max_version=0)])
+[2020-09-03 20:56:09,124] {parser.py:139} DEBUG - Received correlation id: 2
+[2020-09-03 20:56:09,125] {parser.py:166} DEBUG - Processing response MetadataResponse_v0
+[2020-09-03 20:56:09,125] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 2 (6.693840026855469 ms): MetadataResponse_v0(brokers=[(node_id=1001, host='127.0.0.1', port=9092)], topics=[(error_code=0, topic='xml-topic', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,126] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 20:56:09,127] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 20:56:09,127] {metrics.py:156} DEBUG - Added sensor with name bytes-fetched
+[2020-09-03 20:56:09,128] {metrics.py:156} DEBUG - Added sensor with name records-fetched
+[2020-09-03 20:56:09,128] {metrics.py:156} DEBUG - Added sensor with name fetch-latency
+[2020-09-03 20:56:09,128] {metrics.py:156} DEBUG - Added sensor with name records-lag
+[2020-09-03 20:56:09,129] {metrics.py:156} DEBUG - Added sensor with name fetch-throttle-time
+[2020-09-03 20:56:09,129] {metrics.py:156} DEBUG - Added sensor with name heartbeat-latency
+[2020-09-03 20:56:09,129] {metrics.py:156} DEBUG - Added sensor with name join-latency
+[2020-09-03 20:56:09,130] {metrics.py:156} DEBUG - Added sensor with name sync-latency
+[2020-09-03 20:56:09,130] {metrics.py:156} DEBUG - Added sensor with name commit-latency
+[2020-09-03 20:56:09,130] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 20:56:09,130] {group.py:926} DEBUG - Subscribed to topic pattern: ^my-site.*
+[2020-09-03 20:56:09,131] {kafka.py:346} DEBUG - Starting the Kafka producer
+[2020-09-03 20:56:09,131] {metrics.py:156} DEBUG - Added sensor with name connections-closed
+[2020-09-03 20:56:09,131] {metrics.py:156} DEBUG - Added sensor with name connections-created
+[2020-09-03 20:56:09,132] {metrics.py:156} DEBUG - Added sensor with name select-time
+[2020-09-03 20:56:09,132] {metrics.py:156} DEBUG - Added sensor with name io-time
+[2020-09-03 20:56:09,132] {client_async.py:373} DEBUG - Initiating connection to node bootstrap-0 at localhost:9092
+[2020-09-03 20:56:09,132] {metrics.py:156} DEBUG - Added sensor with name bytes-sent-received
+[2020-09-03 20:56:09,133] {metrics.py:156} DEBUG - Added sensor with name bytes-sent
+[2020-09-03 20:56:09,133] {metrics.py:156} DEBUG - Added sensor with name bytes-received
+[2020-09-03 20:56:09,133] {metrics.py:156} DEBUG - Added sensor with name request-latency
+[2020-09-03 20:56:09,133] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.bytes-sent
+[2020-09-03 20:56:09,134] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.bytes-received
+[2020-09-03 20:56:09,134] {metrics.py:156} DEBUG - Added sensor with name node-bootstrap-0.latency
+[2020-09-03 20:56:09,134] {conn.py:365} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+[2020-09-03 20:56:09,134] {conn.py:371} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [IPv4 ('127.0.0.1', 9092)]>: setting socket option (6, 1, 1)
+[2020-09-03 20:56:09,135] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:56:09,135] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 20:56:09,135] {conn.py:391} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: established TCP connection
+[2020-09-03 20:56:09,135] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:56:09,136] {client_async.py:281} DEBUG - Node bootstrap-0 connected
+[2020-09-03 20:56:09,136] {parser.py:59} DEBUG - Sending request ApiVersionRequest_v0()
+[2020-09-03 20:56:09,136] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 1: ApiVersionRequest_v0()
+[2020-09-03 20:56:09,237] {parser.py:59} DEBUG - Sending request MetadataRequest_v0(topics=[])
+[2020-09-03 20:56:09,237] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 2: MetadataRequest_v0(topics=[])
+[2020-09-03 20:56:09,238] {parser.py:139} DEBUG - Received correlation id: 1
+[2020-09-03 20:56:09,238] {parser.py:166} DEBUG - Processing response ApiVersionResponse_v0
+[2020-09-03 20:56:09,239] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 1 (102.03313827514648 ms): ApiVersionResponse_v0(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=8), (api_key=1, min_version=0, max_version=11), (api_key=2, min_version=0, max_version=5), (api_key=3, min_version=0, max_version=9), (api_key=4, min_version=0, max_version=4), (api_key=5, min_version=0, max_version=3), (api_key=6, min_version=0, max_version=6), (api_key=7, min_version=0, max_version=3), (api_key=8, min_version=0, max_version=8), (api_key=9, min_version=0, max_version=7), (api_key=10, min_version=0, max_version=3), (api_key=11, min_version=0, max_version=7), (api_key=12, min_version=0, max_version=4), (api_key=13, min_version=0, max_version=4), (api_key=14, min_version=0, max_version=5), (api_key=15, min_version=0, max_version=5), (api_key=16, min_version=0, max_version=4), (api_key=17, min_version=0, max_version=1), (api_key=18, min_version=0, max_version=3), (api_key=19, min_version=0, max_version=5), (api_key=20, min_version=0, max_version=4), (api_key=21, min_version=0, max_version=2), (api_key=22, min_version=0, max_version=3), (api_key=23, min_version=0, max_version=3), (api_key=24, min_version=0, max_version=1), (api_key=25, min_version=0, max_version=1), (api_key=26, min_version=0, max_version=1), (api_key=27, min_version=0, max_version=0), (api_key=28, min_version=0, max_version=3), (api_key=29, min_version=0, max_version=2), (api_key=30, min_version=0, max_version=2), (api_key=31, min_version=0, max_version=2), (api_key=32, min_version=0, max_version=3), (api_key=33, min_version=0, max_version=1), (api_key=34, min_version=0, max_version=1), (api_key=35, min_version=0, max_version=2), (api_key=36, min_version=0, max_version=2), (api_key=37, min_version=0, max_version=2), (api_key=38, min_version=0, max_version=2), (api_key=39, min_version=0, max_version=2), (api_key=40, min_version=0, max_version=2), (api_key=41, min_version=0, max_version=2), (api_key=42, min_version=0, max_version=2), (api_key=43, min_version=0, max_version=2), (api_key=44, min_version=0, max_version=1), (api_key=45, min_version=0, max_version=0), (api_key=46, min_version=0, max_version=0), (api_key=47, min_version=0, max_version=0), (api_key=48, min_version=0, max_version=0), (api_key=49, min_version=0, max_version=0)])
+[2020-09-03 20:56:09,239] {parser.py:139} DEBUG - Received correlation id: 2
+[2020-09-03 20:56:09,240] {parser.py:166} DEBUG - Processing response MetadataResponse_v0
+[2020-09-03 20:56:09,240] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 2 (2.6237964630126953 ms): MetadataResponse_v0(brokers=[(node_id=1001, host='127.0.0.1', port=9092)], topics=[(error_code=0, topic='xml-topic', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,241] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 20:56:09,242] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 20:56:09,242] {metrics.py:156} DEBUG - Added sensor with name bufferpool-wait-time
+[2020-09-03 20:56:09,243] {metrics.py:156} DEBUG - Added sensor with name batch-size
+[2020-09-03 20:56:09,243] {metrics.py:156} DEBUG - Added sensor with name compression-rate
+[2020-09-03 20:56:09,244] {metrics.py:156} DEBUG - Added sensor with name queue-time
+[2020-09-03 20:56:09,244] {metrics.py:156} DEBUG - Added sensor with name produce-throttle-time
+[2020-09-03 20:56:09,244] {metrics.py:156} DEBUG - Added sensor with name records-per-request
+[2020-09-03 20:56:09,244] {metrics.py:156} DEBUG - Added sensor with name bytes
+[2020-09-03 20:56:09,245] {metrics.py:156} DEBUG - Added sensor with name record-retries
+[2020-09-03 20:56:09,245] {metrics.py:156} DEBUG - Added sensor with name errors
+[2020-09-03 20:56:09,245] {metrics.py:156} DEBUG - Added sensor with name record-size-max
+[2020-09-03 20:56:09,245] {sender.py:55} DEBUG - Starting Kafka producer I/O thread.
+[2020-09-03 20:56:09,246] {kafka.py:414} DEBUG - Kafka producer started
+[2020-09-03 20:56:09,246] {client_async.py:835} DEBUG - Sending metadata request MetadataRequest_v1(topics=NULL) to node bootstrap-0
+[2020-09-03 20:56:09,246] {base.py:672} DEBUG - Sending group coordinator request for group xml-transformer-group to broker bootstrap-0
+[2020-09-03 20:56:09,246] {parser.py:59} DEBUG - Sending request MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,247] {parser.py:59} DEBUG - Sending request GroupCoordinatorRequest_v0(consumer_group='xml-transformer-group')
+[2020-09-03 20:56:09,247] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 3: MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,247] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 3: GroupCoordinatorRequest_v0(consumer_group='xml-transformer-group')
+[2020-09-03 20:56:09,248] {client_async.py:835} DEBUG - Sending metadata request MetadataRequest_v1(topics=NULL) to node bootstrap-0
+[2020-09-03 20:56:09,248] {parser.py:59} DEBUG - Sending request MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,248] {conn.py:969} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 4: MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,249] {parser.py:139} DEBUG - Received correlation id: 3
+[2020-09-03 20:56:09,249] {parser.py:166} DEBUG - Processing response MetadataResponse_v1
+[2020-09-03 20:56:09,250] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 3 (2.399444580078125 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='127.0.0.1', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='xml-topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', is_internal=True, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,250] {parser.py:139} DEBUG - Received correlation id: 3
+[2020-09-03 20:56:09,251] {cluster.py:325} DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 2, groups: 0)
+[2020-09-03 20:56:09,252] {parser.py:166} DEBUG - Processing response GroupCoordinatorResponse_v0
+[2020-09-03 20:56:09,252] {parser.py:139} DEBUG - Received correlation id: 4
+[2020-09-03 20:56:09,252] {parser.py:166} DEBUG - Processing response MetadataResponse_v1
+[2020-09-03 20:56:09,253] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 3 (5.350351333618164 ms): GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='127.0.0.1', port=9092)
+[2020-09-03 20:56:09,253] {conn.py:1071} DEBUG - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 4 (4.843950271606445 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='127.0.0.1', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='xml-topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', is_internal=True, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,254] {base.py:681} DEBUG - Received group coordinator response GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='127.0.0.1', port=9092)
+[2020-09-03 20:56:09,254] {cluster.py:355} DEBUG - Updating coordinator for xml-transformer-group: GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='127.0.0.1', port=9092)
+[2020-09-03 20:56:09,254] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 20:56:09,255] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 20:56:09,255] {cluster.py:325} DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 2, groups: 1)
+[2020-09-03 20:56:09,255] {client_async.py:373} DEBUG - Initiating connection to node coordinator-1001 at 127.0.0.1:9092
+[2020-09-03 20:56:09,256] {metrics.py:156} DEBUG - Added sensor with name node-coordinator-1001.bytes-sent
+[2020-09-03 20:56:09,256] {metrics.py:156} DEBUG - Added sensor with name node-coordinator-1001.bytes-received
+[2020-09-03 20:56:09,256] {metrics.py:156} DEBUG - Added sensor with name node-coordinator-1001.latency
+[2020-09-03 20:56:09,256] {conn.py:365} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <disconnected> [IPv4 None]>: creating new socket
+[2020-09-03 20:56:09,257] {conn.py:371} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <disconnected> [IPv4 ('127.0.0.1', 9092)]>: setting socket option (6, 1, 1)
+[2020-09-03 20:56:09,257] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:56:09,257] {conn.py:391} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: established TCP connection
+[2020-09-03 20:56:09,258] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:56:09,258] {client_async.py:281} DEBUG - Node coordinator-1001 connected
+[2020-09-03 20:56:09,258] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 20:56:09,356] {client_async.py:854} DEBUG - Initializing connection to node 1001 for metadata request
+[2020-09-03 20:56:09,407] {client_async.py:373} DEBUG - Initiating connection to node 1001 at 127.0.0.1:9092
+[2020-09-03 20:56:09,408] {metrics.py:156} DEBUG - Added sensor with name node-1001.bytes-sent
+[2020-09-03 20:56:09,409] {metrics.py:156} DEBUG - Added sensor with name node-1001.bytes-received
+[2020-09-03 20:56:09,409] {metrics.py:156} DEBUG - Added sensor with name node-1001.latency
+[2020-09-03 20:56:09,410] {conn.py:365} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <disconnected> [IPv4 None]>: creating new socket
+[2020-09-03 20:56:09,410] {conn.py:371} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <disconnected> [IPv4 ('127.0.0.1', 9092)]>: setting socket option (6, 1, 1)
+[2020-09-03 20:56:09,410] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:56:09,411] {conn.py:391} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: established TCP connection
+[2020-09-03 20:56:09,411] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:56:09,412] {client_async.py:281} DEBUG - Node 1001 connected
+[2020-09-03 20:56:09,412] {client_async.py:835} DEBUG - Sending metadata request MetadataRequest_v1(topics=NULL) to node 1001
+[2020-09-03 20:56:09,412] {parser.py:59} DEBUG - Sending request MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,412] {conn.py:969} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 1: MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,414] {parser.py:139} DEBUG - Received correlation id: 1
+[2020-09-03 20:56:09,414] {parser.py:166} DEBUG - Processing response MetadataResponse_v1
+[2020-09-03 20:56:09,415] {conn.py:1071} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 1 (2.101898193359375 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='127.0.0.1', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='xml-topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', is_internal=True, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,416] {cluster.py:325} DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 2, groups: 1)
+[2020-09-03 20:56:09,416] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 20:56:09,416] {base.py:934} DEBUG - Heartbeat thread started
+[2020-09-03 20:56:09,416] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 20:56:09,417] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 20:56:09,417] {base.py:483} DEBUG - Sending JoinGroup (JoinGroupRequest_v2(group='xml-transformer-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])) to coordinator coordinator-1001
+[2020-09-03 20:56:09,417] {parser.py:59} DEBUG - Sending request JoinGroupRequest_v2(group='xml-transformer-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,418] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 1: JoinGroupRequest_v2(group='xml-transformer-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,420] {parser.py:139} DEBUG - Received correlation id: 1
+[2020-09-03 20:56:09,420] {parser.py:166} DEBUG - Processing response JoinGroupResponse_v2
+[2020-09-03 20:56:09,420] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 1 (2.671957015991211 ms): JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', members=[(member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,421] {base.py:508} DEBUG - Received successful JoinGroup response for group xml-transformer-group: JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', members=[(member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,421] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 20:56:09,421] {consumer.py:329} DEBUG - Performing assignment for group xml-transformer-group using strategy range with subscriptions {'kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c': ConsumerProtocolMemberMetadata(version=0, subscription=[], user_data=b'')}
+[2020-09-03 20:56:09,421] {consumer.py:333} DEBUG - Finished assignment for group xml-transformer-group: {'kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c': ConsumerProtocolMemberAssignment(version=0, assignment=[], user_data=b'')}
+[2020-09-03 20:56:09,422] {base.py:604} DEBUG - Sending leader SyncGroup for group xml-transformer-group to coordinator coordinator-1001: SyncGroupRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', group_assignment=[(member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,422] {parser.py:59} DEBUG - Sending request SyncGroupRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', group_assignment=[(member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,422] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 2: SyncGroupRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', group_assignment=[(member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c', member_metadata=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')])
+[2020-09-03 20:56:09,424] {parser.py:139} DEBUG - Received correlation id: 2
+[2020-09-03 20:56:09,425] {parser.py:166} DEBUG - Processing response SyncGroupResponse_v1
+[2020-09-03 20:56:09,425] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 2 (2.438783645629883 ms): SyncGroupResponse_v1(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[2020-09-03 20:56:09,425] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 1
+[2020-09-03 20:56:09,425] {subscription_state.py:257} INFO - Updated partition assignment: []
+[2020-09-03 20:56:09,426] {consumer.py:243} INFO - Setting newly assigned partitions set() for group xml-transformer-group
+[2020-09-03 20:56:09,517] {client_async.py:835} DEBUG - Sending metadata request MetadataRequest_v1(topics=NULL) to node 1001
+[2020-09-03 20:56:09,518] {parser.py:59} DEBUG - Sending request MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,519] {conn.py:969} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 2: MetadataRequest_v1(topics=NULL)
+[2020-09-03 20:56:09,523] {parser.py:139} DEBUG - Received correlation id: 2
+[2020-09-03 20:56:09,524] {parser.py:166} DEBUG - Processing response MetadataResponse_v1
+[2020-09-03 20:56:09,526] {conn.py:1071} DEBUG - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 2 (5.98907470703125 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='127.0.0.1', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='xml-topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', is_internal=True, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+[2020-09-03 20:56:09,528] {cluster.py:325} DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 2, groups: 1)
+[2020-09-03 20:56:12,427] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:12,427] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:12,428] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 3: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:12,431] {parser.py:139} DEBUG - Received correlation id: 3
+[2020-09-03 20:56:12,432] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:12,433] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 3 (3.841876983642578 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:12,433] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:14,428] {consumer.py:558} DEBUG - No offsets to commit
+[2020-09-03 20:56:14,530] {consumer.py:797} DEBUG - Completed autocommit of offsets {} for group xml-transformer-group
+[2020-09-03 20:56:15,443] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:15,444] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:15,445] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 4: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:15,446] {parser.py:139} DEBUG - Received correlation id: 4
+[2020-09-03 20:56:15,447] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:15,447] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 4 (2.146482467651367 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:15,448] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:18,474] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:18,474] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:18,475] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 5: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:18,477] {parser.py:139} DEBUG - Received correlation id: 5
+[2020-09-03 20:56:18,477] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:18,477] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 5 (2.1877288818359375 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:18,478] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:19,428] {consumer.py:558} DEBUG - No offsets to commit
+[2020-09-03 20:56:19,530] {consumer.py:797} DEBUG - Completed autocommit of offsets {} for group xml-transformer-group
+[2020-09-03 20:56:21,476] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:21,477] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:21,477] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 6: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:21,479] {parser.py:139} DEBUG - Received correlation id: 6
+[2020-09-03 20:56:21,479] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:21,480] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 6 (2.2945404052734375 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:21,480] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:24,430] {consumer.py:558} DEBUG - No offsets to commit
+[2020-09-03 20:56:24,477] {consumer.py:797} DEBUG - Completed autocommit of offsets {} for group xml-transformer-group
+[2020-09-03 20:56:24,494] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:24,495] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:24,496] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 7: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:24,500] {parser.py:139} DEBUG - Received correlation id: 7
+[2020-09-03 20:56:24,501] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:24,502] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 7 (4.470586776733398 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:24,502] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:27,524] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:27,525] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:27,525] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 8: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:27,527] {parser.py:139} DEBUG - Received correlation id: 8
+[2020-09-03 20:56:27,528] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:27,528] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 8 (2.1927356719970703 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:27,528] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:29,431] {consumer.py:558} DEBUG - No offsets to commit
+[2020-09-03 20:56:29,534] {consumer.py:797} DEBUG - Completed autocommit of offsets {} for group xml-transformer-group
+[2020-09-03 20:56:30,554] {base.py:807} DEBUG - Heartbeat: xml-transformer-group[1] kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c
+[2020-09-03 20:56:30,554] {parser.py:59} DEBUG - Sending request HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:30,555] {conn.py:969} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Request 9: HeartbeatRequest_v1(group='xml-transformer-group', generation_id=1, member_id='kafka-python-2.0.1-68871294-2f57-42ce-a442-57604fa62a0c')
+[2020-09-03 20:56:30,557] {parser.py:139} DEBUG - Received correlation id: 9
+[2020-09-03 20:56:30,557] {parser.py:166} DEBUG - Processing response HeartbeatResponse_v1
+[2020-09-03 20:56:30,557] {conn.py:1071} DEBUG - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connected> [IPv4 ('127.0.0.1', 9092)]> Response 9 (2.162456512451172 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+[2020-09-03 20:56:30,558] {base.py:820} DEBUG - Received successful heartbeat response for group xml-transformer-group
+[2020-09-03 20:56:32,743] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 20:56:32,745] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 20:56:32,746] {kafka.py:502} DEBUG - The Kafka producer has closed.
+[2020-09-03 20:56:32,746] {sender.py:64} DEBUG - Beginning shutdown of Kafka producer I/O thread, sending remaining records.
+[2020-09-03 20:57:07,102] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:57:07,102] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 20:57:07,103] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:57:07,206] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 20:57:07,206] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 20:57:07,207] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 20:57:07,208] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:57:07,209] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 20:57:07,209] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:57:07,313] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 20:57:07,313] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 20:57:07,316] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 20:57:07,317] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 20:57:07,318] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:57:07,319] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:57:07,319] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 20:57:07,320] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 20:57:07,320] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 20:57:07,320] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 20:57:07,323] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 20:57:07,325] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 3
+[2020-09-03 20:57:07,326] {subscription_state.py:257} INFO - Updated partition assignment: []
+[2020-09-03 20:57:07,326] {consumer.py:243} INFO - Setting newly assigned partitions set() for group xml-transformer-group
+[2020-09-03 20:57:07,472] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:57:07,473] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:00:18,903] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:00:18,904] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:00:25,703] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:00:25,704] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:00:25,704] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:00:25,808] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:00:25,808] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:00:25,809] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:00:25,811] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:00:25,811] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:00:25,812] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:00:25,922] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:00:25,924] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:00:25,938] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:00:25,939] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:00:25,939] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-1', 'my-site-2']
+[2020-09-03 21:00:25,941] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:00:25,942] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:00:25,942] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:00:26,092] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:00:26,094] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:00:26,105] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:00:26,107] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:00:26,109] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:00:27,973] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:00:27,985] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 4
+[2020-09-03 21:00:27,987] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:00:27,988] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0)} for group xml-transformer-group
+[2020-09-03 21:00:28,008] {transformer.py:58} INFO - my-site-3:0:0: key=None value={'site': 'my-site-3', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test3.txt'}
+[2020-09-03 21:00:28,057] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:00:28,058] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:02:52,073] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:02:52,073] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:02:52,074] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:02:52,177] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:02:52,178] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:02:52,179] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:02:52,180] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:02:52,181] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:02:52,181] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:02:52,284] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:02:52,285] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:02:52,288] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:02:52,289] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:02:52,289] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:02:52,290] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:02:52,291] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:02:52,291] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-1', 'my-site-2']
+[2020-09-03 21:02:52,292] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:02:52,292] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:02:52,293] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:02:52,296] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:02:52,298] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 6
+[2020-09-03 21:02:52,298] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:02:52,298] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0)} for group xml-transformer-group
+[2020-09-03 21:02:52,300] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:02:52,300] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:02:52,408] {transformer.py:58} INFO - my-site-1:0:0: key=None value={'site': 'my-site-1', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test1.txt'}
+[2020-09-03 21:02:52,455] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:02:52,456] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:04:21,984] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:04:21,985] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:04:21,985] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:04:22,089] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:04:22,090] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:04:22,091] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:04:22,092] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:04:22,093] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:04:22,093] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:04:22,196] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:04:22,196] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:04:22,200] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:04:22,201] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:04:22,202] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:04:22,203] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:04:22,203] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:04:22,204] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-1', 'my-site-3', 'my-site-2']
+[2020-09-03 21:04:22,204] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:04:22,205] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:04:22,205] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:04:22,208] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:04:22,211] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 8
+[2020-09-03 21:04:22,211] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:04:22,211] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0)} for group xml-transformer-group
+[2020-09-03 21:04:22,214] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:04:22,214] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:04:22,321] {transformer.py:58} INFO - my-site-3:0:0: key=None value={'site': 'my-site-3', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test3.txt'}
+[2020-09-03 21:04:22,366] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:04:22,367] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:05:59,801] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:05:59,802] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:05:59,802] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:05:59,906] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:05:59,907] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:05:59,909] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:05:59,910] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:05:59,911] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:05:59,912] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:00,015] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:06:00,016] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:06:00,020] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:06:00,021] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:06:00,021] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-1', 'my-site-2']
+[2020-09-03 21:06:00,022] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:00,022] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:00,023] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:06:00,172] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:00,172] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:00,176] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:06:00,176] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:06:00,177] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:06:00,180] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:06:00,182] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 1
+[2020-09-03 21:06:00,182] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:06:00,183] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-1', partition=0)} for group xml-transformer-group
+[2020-09-03 21:06:00,191] {transformer.py:58} INFO - my-site-2:0:0: key=None value={'site': 'my-site-2', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test2.txt'}
+[2020-09-03 21:06:00,191] {transformer.py:62} INFO - Sending payload: {'site': 'my-site-2', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test2.txt', 'xml': b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent></XmlRequest>'}
+[2020-09-03 21:06:00,240] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:06:00,241] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:06:52,585] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:52,585] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:06:52,586] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:52,692] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:06:52,693] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:06:52,697] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:06:52,700] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:52,701] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:06:52,702] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:52,809] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:06:52,810] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:06:52,815] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:06:52,817] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:06:52,818] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:52,819] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:52,820] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:06:52,821] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-1', 'my-site-2', 'my-site-3']
+[2020-09-03 21:06:52,821] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:06:52,822] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:06:52,823] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:06:52,826] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:06:52,829] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 3
+[2020-09-03 21:06:52,829] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:06:52,829] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0)} for group xml-transformer-group
+[2020-09-03 21:06:52,831] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:06:52,832] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:06:52,940] {transformer.py:58} INFO - my-site-3:0:0: key=None value={'site': 'my-site-3', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test3.txt'}
+[2020-09-03 21:06:52,987] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:06:52,987] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:08:00,120] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:00,121] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:08:00,122] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:00,225] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:08:00,226] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:08:00,226] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:08:00,228] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:00,228] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:08:00,229] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:00,332] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:08:00,344] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:08:00,348] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:08:00,349] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:08:00,349] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-1', 'my-site-2']
+[2020-09-03 21:08:00,350] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:00,350] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:00,351] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:08:00,501] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:00,501] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:00,504] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:08:00,505] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:08:00,505] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:08:00,508] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:08:00,510] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 5
+[2020-09-03 21:08:00,511] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:08:00,511] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0)} for group xml-transformer-group
+[2020-09-03 21:08:00,520] {transformer.py:58} INFO - my-site-1:0:0: key=None value={'site': 'my-site-1', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test1.txt'}
+[2020-09-03 21:08:00,566] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:08:00,567] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:08:31,926] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:31,927] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:08:31,928] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:32,033] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:08:32,034] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:08:32,036] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:08:32,038] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:32,039] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:08:32,040] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:32,144] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:08:32,144] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:08:32,148] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:08:32,149] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:08:32,150] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:32,152] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:32,152] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:08:32,153] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-2', 'my-site-1']
+[2020-09-03 21:08:32,154] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:08:32,154] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:08:32,155] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:08:32,158] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:08:32,161] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 7
+[2020-09-03 21:08:32,161] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:08:32,162] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0)} for group xml-transformer-group
+[2020-09-03 21:08:32,165] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:08:32,165] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:08:32,272] {transformer.py:58} INFO - my-site-1:0:0: key=None value={'site': 'my-site-1', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test1.txt'}
+[2020-09-03 21:08:32,273] {transformer.py:62} INFO - Sending payload: {'site': 'my-site-1', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test1.txt', 'xml': b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent></XmlRequest>'}
+[2020-09-03 21:08:32,320] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:08:32,320] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:12:36,217] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:36,217] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:12:36,218] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:36,321] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:12:36,321] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:12:36,322] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:12:36,323] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:36,324] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:12:36,324] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:36,427] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:12:36,428] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:12:36,431] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:12:36,431] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:12:36,432] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:36,432] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:36,433] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:12:36,433] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:12:36,434] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:12:36,434] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:12:36,437] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:12:36,439] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 9
+[2020-09-03 21:12:36,440] {subscription_state.py:257} INFO - Updated partition assignment: []
+[2020-09-03 21:12:36,440] {consumer.py:243} INFO - Setting newly assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:12:36,585] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:36,585] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:36,588] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-2', 'my-site-3', 'my-site-1']
+[2020-09-03 21:12:36,740] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:36,741] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:36,741] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:12:36,744] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:12:36,745] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:12:36,748] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:12:36,751] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 10
+[2020-09-03 21:12:36,751] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:12:36,752] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0)} for group xml-transformer-group
+[2020-09-03 21:12:36,760] {transformer.py:56} INFO - my-site-2:0:0: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}'
+[2020-09-03 21:12:36,809] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:12:36,809] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:23:08,909] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:23:08,910] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:23:08,910] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:23:09,016] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:23:09,017] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:23:09,018] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:23:09,020] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:23:09,021] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:23:09,022] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:23:09,126] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:23:09,126] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:23:09,129] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:23:09,129] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:23:09,130] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:23:09,131] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:23:09,131] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:23:09,132] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-3', 'my-site-1', 'my-site-2']
+[2020-09-03 21:23:09,132] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:23:09,133] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:23:09,133] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:23:09,136] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:23:09,138] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 1
+[2020-09-03 21:23:09,138] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:23:09,139] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0)} for group xml-transformer-group
+[2020-09-03 21:23:09,141] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:23:09,141] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:23:09,247] {transformer.py:56} INFO - my-site-3:0:0: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}'
+[2020-09-03 21:23:09,248] {transformer.py:60} INFO - Sending payload: {'site': 'my-site-3', 'consent': 'Okies', 'file': 's3://drewtech.datapipeline.bucket/test3.txt', 'xml': b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent></XmlRequest>'}
+[2020-09-03 21:23:09,293] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:23:09,294] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:24:12,365] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:12,366] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:24:12,366] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:12,470] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:24:12,471] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:24:12,472] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:24:12,473] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:12,474] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:24:12,475] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:12,578] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:24:12,578] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:24:12,581] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:24:12,582] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:24:12,583] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:12,584] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:12,584] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:24:12,585] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-2', 'my-site-3', 'my-site-1']
+[2020-09-03 21:24:12,585] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:24:12,586] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:24:12,586] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:24:12,589] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:24:12,592] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 3
+[2020-09-03 21:24:12,592] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:24:12,592] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0)} for group xml-transformer-group
+[2020-09-03 21:24:12,594] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:12,595] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:12,702] {transformer.py:56} INFO - my-site-1:0:0: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}'
+[2020-09-03 21:24:12,748] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:24:12,749] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:24:51,461] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:51,461] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:24:51,462] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:51,565] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:24:51,565] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:24:51,566] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:24:51,567] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:51,567] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:24:51,568] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:51,670] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:24:51,671] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:24:51,674] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:24:51,674] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:24:51,675] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:51,676] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:51,677] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:24:51,677] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-2', 'my-site-1', 'my-site-3']
+[2020-09-03 21:24:51,678] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:24:51,678] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:24:51,679] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:24:51,682] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:24:51,684] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 5
+[2020-09-03 21:24:51,684] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:24:51,684] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0), TopicPartition(topic='my-site-1', partition=0)} for group xml-transformer-group
+[2020-09-03 21:24:51,687] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:24:51,687] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:24:51,795] {transformer.py:56} INFO - my-site-1:0:0: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}'
+[2020-09-03 21:24:51,849] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:24:51,850] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:28:00,432] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:28:00,432] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:28:00,433] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:28:00,536] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:28:00,537] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:28:00,538] {subscription_state.py:116} INFO - Subscribing to pattern: /^my-site.*/
+[2020-09-03 21:28:00,539] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:28:00,540] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:28:00,540] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:28:00,643] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:28:00,643] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:28:00,647] {cluster.py:371} INFO - Group coordinator for xml-transformer-group is BrokerMetadata(nodeId='coordinator-1001', host='127.0.0.1', port=9092, rack=None)
+[2020-09-03 21:28:00,648] {base.py:695} INFO - Discovered coordinator coordinator-1001 for group xml-transformer-group
+[2020-09-03 21:28:00,648] {subscription_state.py:171} INFO - Updating subscribed topics to: ['my-site-1', 'my-site-2', 'my-site-3']
+[2020-09-03 21:28:00,649] {conn.py:378} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:28:00,650] {conn.py:407} INFO - <BrokerConnection node_id=coordinator-1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:28:00,650] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:28:00,799] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:28:00,800] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:28:00,802] {base.py:742} INFO - Starting new heartbeat thread
+[2020-09-03 21:28:00,803] {consumer.py:346} INFO - Revoking previously assigned partitions set() for group xml-transformer-group
+[2020-09-03 21:28:00,804] {base.py:451} INFO - (Re-)joining group xml-transformer-group
+[2020-09-03 21:28:00,806] {base.py:523} INFO - Elected group leader -- performing partition assignments using range
+[2020-09-03 21:28:00,809] {base.py:337} INFO - Successfully joined group xml-transformer-group with generation 1
+[2020-09-03 21:28:00,809] {subscription_state.py:257} INFO - Updated partition assignment: [TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-3', partition=0)]
+[2020-09-03 21:28:00,810] {consumer.py:243} INFO - Setting newly assigned partitions {TopicPartition(topic='my-site-2', partition=0), TopicPartition(topic='my-site-1', partition=0), TopicPartition(topic='my-site-3', partition=0)} for group xml-transformer-group
+[2020-09-03 21:28:00,818] {transformer.py:57} INFO - my-site-2:0:0: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}'
+[2020-09-03 21:28:00,819] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,820] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,820] {transformer.py:57} INFO - my-site-2:0:1: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}'
+[2020-09-03 21:28:00,821] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:28:00,821] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,821] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:28:00,822] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,822] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:28:00,823] {transformer.py:57} INFO - my-site-2:0:2: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}'
+[2020-09-03 21:28:00,823] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,824] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,824] {transformer.py:57} INFO - my-site-2:0:3: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}'
+[2020-09-03 21:28:00,825] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,825] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,826] {transformer.py:57} INFO - my-site-2:0:4: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}'
+[2020-09-03 21:28:00,826] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,828] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,828] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test2.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,828] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,828] {transformer.py:57} INFO - my-site-2:0:5: key=None value=b'{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}'
+[2020-09-03 21:28:00,829] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,829] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,829] {transformer.py:47} INFO - 0
+[2020-09-03 21:28:00,829] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-2</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test5.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,830] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,830] {transformer.py:57} INFO - my-site-1:0:0: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}'
+[2020-09-03 21:28:00,830] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,830] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,831] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,831] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,831] {transformer.py:57} INFO - my-site-1:0:1: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}'
+[2020-09-03 21:28:00,831] {transformer.py:47} INFO - 1
+[2020-09-03 21:28:00,832] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,832] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,832] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,832] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,833] {transformer.py:57} INFO - my-site-1:0:2: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}'
+[2020-09-03 21:28:00,833] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,833] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,833] {transformer.py:47} INFO - 2
+[2020-09-03 21:28:00,834] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,834] {transformer.py:57} INFO - my-site-1:0:3: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}'
+[2020-09-03 21:28:00,835] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,836] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,835] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,836] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,836] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,840] {transformer.py:47} INFO - 3
+[2020-09-03 21:28:00,841] {transformer.py:57} INFO - my-site-1:0:4: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}'
+[2020-09-03 21:28:00,842] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,842] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,842] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,843] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test1.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,843] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,843] {transformer.py:57} INFO - my-site-1:0:5: key=None value=b'{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}'
+[2020-09-03 21:28:00,844] {transformer.py:47} INFO - 4
+[2020-09-03 21:28:00,844] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,844] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,844] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-1</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test4.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,845] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,845] {transformer.py:57} INFO - my-site-3:0:0: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}'
+[2020-09-03 21:28:00,845] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,845] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,845] {transformer.py:47} INFO - 5
+[2020-09-03 21:28:00,846] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,846] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,846] {transformer.py:57} INFO - my-site-3:0:1: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}'
+[2020-09-03 21:28:00,846] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,846] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,847] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,847] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,847] {transformer.py:47} INFO - 6
+[2020-09-03 21:28:00,848] {transformer.py:57} INFO - my-site-3:0:2: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}'
+[2020-09-03 21:28:00,848] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,848] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,848] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,849] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,849] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,849] {transformer.py:57} INFO - my-site-3:0:3: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}'
+[2020-09-03 21:28:00,849] {transformer.py:47} INFO - 7
+[2020-09-03 21:28:00,849] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,850] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,850] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,850] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,850] {transformer.py:57} INFO - my-site-3:0:4: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}'
+[2020-09-03 21:28:00,851] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,851] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,851] {transformer.py:47} INFO - 8
+[2020-09-03 21:28:00,851] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test3.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,852] {transformer.py:57} INFO - my-site-3:0:5: key=None value=b'{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}'
+[2020-09-03 21:28:00,852] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,853] {transformer.py:61} INFO - Sending payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,853] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,854] {transformer.py:63} INFO - Sent payload: b'<XmlRequest><Site>my-site-3</Site><DoYouConsent>Okies</DoYouConsent><File>s3://drewtech.datapipeline.bucket/test6.txt</File></XmlRequest>'
+[2020-09-03 21:28:00,854] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,855] {transformer.py:47} INFO - 9
+[2020-09-03 21:28:00,856] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,856] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,858] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,858] {transformer.py:47} INFO - 10
+[2020-09-03 21:28:00,858] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,858] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,859] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,859] {transformer.py:47} INFO - 11
+[2020-09-03 21:28:00,859] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,859] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,860] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,860] {transformer.py:47} INFO - 12
+[2020-09-03 21:28:00,860] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,861] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,861] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,861] {transformer.py:47} INFO - 13
+[2020-09-03 21:28:00,861] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,862] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,862] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,862] {transformer.py:47} INFO - 14
+[2020-09-03 21:28:00,862] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,862] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,863] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,863] {transformer.py:47} INFO - 15
+[2020-09-03 21:28:00,863] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,863] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,863] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,864] {transformer.py:47} INFO - 16
+[2020-09-03 21:28:00,865] {transformer.py:44} INFO - Transformed and sent!
+[2020-09-03 21:28:00,865] {transformer.py:45} INFO - xml-topic
+[2020-09-03 21:28:00,866] {transformer.py:46} INFO - 0
+[2020-09-03 21:28:00,866] {transformer.py:47} INFO - 17
+[2020-09-03 21:30:52,526] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:30:52,527] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.

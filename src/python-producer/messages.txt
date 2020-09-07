@@ -1,0 +1,6 @@
+{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+{"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+{"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+{"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}

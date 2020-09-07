@@ -1,0 +1,176 @@
+[2020-09-03 20:58:55,056] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:58:55,057] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 20:58:55,057] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:58:55,167] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 20:58:55,168] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 20:58:55,180] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 20:58:55,331] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 20:58:55,332] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 20:58:55,333] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 20:58:55,466] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 20:58:55,468] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 20:58:55,479] {producer.py:28} INFO - my-site-1
+[2020-09-03 20:58:55,480] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,481] {producer.py:30} INFO - 0
+[2020-09-03 20:58:55,578] {cluster.py:294} WARNING - Topic my-site-2 is not available during auto-create initialization
+[2020-09-03 20:58:55,683] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 20:58:55,684] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 20:58:55,688] {producer.py:28} INFO - my-site-2
+[2020-09-03 20:58:55,688] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,689] {producer.py:30} INFO - 0
+[2020-09-03 20:58:55,822] {cluster.py:294} WARNING - Topic my-site-3 is not available during auto-create initialization
+[2020-09-03 20:58:55,928] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 20:58:55,930] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 20:58:55,932] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 20:58:55,934] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 20:58:55,935] {producer.py:28} INFO - my-site-3
+[2020-09-03 20:58:55,936] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 20:58:55,937] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,937] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 20:58:55,938] {producer.py:30} INFO - 0
+[2020-09-03 20:58:55,940] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 20:58:55,943] {producer.py:28} INFO - my-site-1
+[2020-09-03 20:58:55,944] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,945] {producer.py:30} INFO - 1
+[2020-09-03 20:58:55,947] {producer.py:28} INFO - my-site-2
+[2020-09-03 20:58:55,948] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,949] {producer.py:30} INFO - 1
+[2020-09-03 20:58:55,950] {producer.py:28} INFO - my-site-3
+[2020-09-03 20:58:55,950] {producer.py:29} INFO - 0
+[2020-09-03 20:58:55,951] {producer.py:30} INFO - 1
+[2020-09-03 20:58:55,952] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 20:58:55,953] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:11:02,848] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:11:02,848] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:11:02,849] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:11:02,953] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:11:02,954] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:11:02,960] {producer.py:44} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:11:03,007] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:11:03,008] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:11:53,248] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:11:53,249] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:11:53,250] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:11:53,353] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:11:53,353] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:11:53,358] {producer.py:44} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:11:53,406] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:11:53,407] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:12:24,335] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:24,335] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:12:24,337] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:24,442] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:12:24,443] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:12:24,448] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:12:24,449] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:12:24,450] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:12:24,451] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 21:12:24,451] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:12:24,452] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 21:12:24,453] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:12:24,453] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 21:12:24,455] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 21:12:24,456] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 21:12:24,457] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 21:12:24,457] {producer.py:28} INFO - my-site-2
+[2020-09-03 21:12:24,458] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 21:12:24,458] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,459] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 21:12:24,459] {producer.py:30} INFO - 2
+[2020-09-03 21:12:24,459] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 21:12:24,459] {producer.py:28} INFO - my-site-1
+[2020-09-03 21:12:24,460] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 21:12:24,460] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,460] {producer.py:30} INFO - 2
+[2020-09-03 21:12:24,461] {producer.py:28} INFO - my-site-3
+[2020-09-03 21:12:24,463] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,463] {producer.py:30} INFO - 2
+[2020-09-03 21:12:24,464] {producer.py:28} INFO - my-site-2
+[2020-09-03 21:12:24,464] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,465] {producer.py:30} INFO - 3
+[2020-09-03 21:12:24,465] {producer.py:28} INFO - my-site-1
+[2020-09-03 21:12:24,465] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,466] {producer.py:30} INFO - 3
+[2020-09-03 21:12:24,466] {producer.py:28} INFO - my-site-3
+[2020-09-03 21:12:24,467] {producer.py:29} INFO - 0
+[2020-09-03 21:12:24,467] {producer.py:30} INFO - 3
+[2020-09-03 21:12:24,467] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:12:24,467] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+[2020-09-03 21:21:43,806] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:21:43,806] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-03 21:21:43,807] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:21:43,910] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-03 21:21:43,910] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-03 21:21:43,914] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:21:43,915] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-03 21:21:43,915] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to 127.0.0.1:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-03 21:21:43,916] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 21:21:43,916] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=127.0.0.1:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2020-09-03 21:21:43,916] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-03 21:21:43,917] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2020-09-03 21:21:43,917] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 21:21:43,918] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-03 21:21:43,919] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 21:21:43,920] {producer.py:28} INFO - my-site-2
+[2020-09-03 21:21:43,920] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-03 21:21:43,921] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,921] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 21:21:43,921] {producer.py:30} INFO - 4
+[2020-09-03 21:21:43,922] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-03 21:21:43,922] {producer.py:28} INFO - my-site-1
+[2020-09-03 21:21:43,922] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 21:21:43,922] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,923] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-03 21:21:43,923] {producer.py:30} INFO - 4
+[2020-09-03 21:21:43,924] {producer.py:28} INFO - my-site-3
+[2020-09-03 21:21:43,924] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,924] {producer.py:30} INFO - 4
+[2020-09-03 21:21:43,925] {producer.py:28} INFO - my-site-2
+[2020-09-03 21:21:43,925] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,926] {producer.py:30} INFO - 5
+[2020-09-03 21:21:43,926] {producer.py:28} INFO - my-site-1
+[2020-09-03 21:21:43,926] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,926] {producer.py:30} INFO - 5
+[2020-09-03 21:21:43,926] {producer.py:28} INFO - my-site-3
+[2020-09-03 21:21:43,927] {producer.py:29} INFO - 0
+[2020-09-03 21:21:43,927] {producer.py:30} INFO - 5
+[2020-09-03 21:21:43,927] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-03 21:21:43,927] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.

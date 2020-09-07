@@ -16,10 +16,20 @@ services:
       KAFKA_ADVERTISED_LISTENERS: INSIDE://:29092,OUTSIDE://127.0.0.1:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      KAFKA_CREATE_TOPICS: "xml-topic,my-site-1,my-site-2,my-site-3"
     depends_on:
       - zookeeper
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+  
+  localstack:
+    container_name: "${LOCALSTACK_DOCKER_NAME-localstack_main}"
+    image: localstack/localstack
+    ports:
+      - "4566-4599:4566-4599"
+      - "${PORT_WEB_UI-8080}:${PORT_WEB_UI-8080}"
+    environment:
+      - SERVICES=s3
   
   kafdrop:
     image: obsidiandynamics/kafdrop
@@ -32,3 +42,46 @@ services:
     depends_on:
       - "kafka"
 
+  python-transformer:
+    build: ./src/python-transformer
+    image: python-transformer:v1 
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      KAFKA_BROKER: "kafka:29092"
+      KAFKA_TOPIC_PATTERN: "^my-site.*"
+      KAFKA_GROUP: "xml-transformer-group"
+      KAFKA_TOPIC: "xml-topic"
+    depends_on: 
+      - "kafka"
+      - "localstack"
+
+  python-consumer:
+    build: ./src/python-consumer
+    image: python-consumer:v1 
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      KAFKA_BROKER: "kafka:29092"
+      AWS_REGION: "ap-southeast-2"
+      AWS_ACCESS_KEY: "ABC"  
+      AWS_SECRET_ACCESS_KEY: "DFG"
+      AWS_S3_ENDPOINT: "http://localhost:4566"
+      KAFKA_TOPIC: "xml-topic"
+      KAFKA_GROUP: "xml-group"
+    depends_on: 
+      - "kafka"
+      - "localstack"
+
+  python-producer:
+    build: ./src/python-producer
+    image: python-producer:v1
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      KAFKA_BROKER: "kafka:29092" 
+    depends_on: 
+      - "kafka"
+      - "python-transformer"
+      - "python-consumer"

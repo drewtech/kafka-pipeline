@@ -1,0 +1,81 @@
+[2020-09-07 11:14:49,324] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-07 11:14:49,325] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-07 11:14:49,325] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+[2020-09-07 11:14:49,326] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:14:49,373] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2020-09-07 11:14:49,373] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+[2020-09-07 11:14:49,373] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:14:49,423] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+[2020-09-07 11:14:49,423] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]> returned error 99. Disconnecting.
+[2020-09-07 11:14:49,423] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: 99 EADDRNOTAVAIL
+[2020-09-07 11:14:49,431] {kafka.py:461} INFO - Kafka producer closed
+[2020-09-07 11:17:46,586] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]>: connecting to kafka:9092 [('172.24.0.4', 9092) IPv4]
+[2020-09-07 11:17:46,586] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-07 11:17:46,587] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]> returned error 111. Disconnecting.
+[2020-09-07 11:17:46,587] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:17:46,634] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]>: connecting to kafka:9092 [('172.24.0.4', 9092) IPv4]
+[2020-09-07 11:17:46,634] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]> returned error 111. Disconnecting.
+[2020-09-07 11:17:46,634] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.24.0.4', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:17:46,639] {kafka.py:461} INFO - Kafka producer closed
+[2020-09-07 11:19:33,159] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: connecting to kafka:29092 [('172.25.0.4', 29092) IPv4]
+[2020-09-07 11:19:33,159] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-07 11:19:33,160] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]> returned error 111. Disconnecting.
+[2020-09-07 11:19:33,161] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:19:33,207] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: connecting to kafka:29092 [('172.25.0.4', 29092) IPv4]
+[2020-09-07 11:19:33,207] {conn.py:416} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]> returned error 111. Disconnecting.
+[2020-09-07 11:19:33,208] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2020-09-07 11:19:33,220] {kafka.py:461} INFO - Kafka producer closed
+[2020-09-07 11:20:20,972] {conn.py:378} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: connecting to kafka:29092 [('172.25.0.4', 29092) IPv4]
+[2020-09-07 11:20:20,973] {conn.py:1195} INFO - Probing node bootstrap-0 broker version
+[2020-09-07 11:20:20,974] {conn.py:407} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: Connection complete.
+[2020-09-07 11:20:21,081] {conn.py:1257} INFO - Broker version identified as 1.0.0
+[2020-09-07 11:20:21,081] {conn.py:1259} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2020-09-07 11:20:21,084] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-07 11:20:21,237] {conn.py:378} INFO - <BrokerConnection node_id=1001 host=b8223dae2d15:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: connecting to b8223dae2d15:29092 [('172.25.0.4', 29092) IPv4]
+[2020-09-07 11:20:21,237] {conn.py:407} INFO - <BrokerConnection node_id=1001 host=b8223dae2d15:29092 <connecting> [IPv4 ('172.25.0.4', 29092)]>: Connection complete.
+[2020-09-07 11:20:21,237] {conn.py:916} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.25.0.4', 29092)]>: Closing connection. 
+[2020-09-07 11:20:21,476] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test1.txt"}
+
+[2020-09-07 11:20:21,476] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-07 11:20:21,510] {producer.py:28} INFO - my-site-1
+[2020-09-07 11:20:21,510] {producer.py:29} INFO - 0
+[2020-09-07 11:20:21,511] {producer.py:30} INFO - 0
+[2020-09-07 11:20:21,610] {cluster.py:294} WARNING - Topic my-site-2 is not available during auto-create initialization
+[2020-09-07 11:20:21,715] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test2.txt"}
+
+[2020-09-07 11:20:21,716] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-07 11:20:21,721] {producer.py:28} INFO - my-site-2
+[2020-09-07 11:20:21,722] {producer.py:29} INFO - 0
+[2020-09-07 11:20:21,722] {producer.py:30} INFO - 0
+[2020-09-07 11:20:21,858] {cluster.py:294} WARNING - Topic my-site-3 is not available during auto-create initialization
+[2020-09-07 11:20:21,968] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test3.txt"}
+
+[2020-09-07 11:20:21,972] {producer.py:45} INFO - Sending {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-07 11:20:21,974] {producer.py:48} INFO - Sent {"site": "my-site-1", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test4.txt"}
+
+[2020-09-07 11:20:21,978] {producer.py:45} INFO - Sending {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-07 11:20:21,981] {producer.py:48} INFO - Sent {"site": "my-site-2", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test5.txt"}
+
+[2020-09-07 11:20:21,984] {producer.py:45} INFO - Sending {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-07 11:20:21,987] {producer.py:28} INFO - my-site-3
+[2020-09-07 11:20:21,988] {producer.py:29} INFO - 0
+[2020-09-07 11:20:21,987] {producer.py:48} INFO - Sent {"site": "my-site-3", "consent": "Okies", "file": "s3://drewtech.datapipeline.bucket/test6.txt"}
+
+[2020-09-07 11:20:21,989] {producer.py:30} INFO - 0
+[2020-09-07 11:20:21,994] {producer.py:28} INFO - my-site-1
+[2020-09-07 11:20:21,995] {producer.py:29} INFO - 0
+[2020-09-07 11:20:21,996] {producer.py:30} INFO - 1
+[2020-09-07 11:20:21,997] {producer.py:28} INFO - my-site-2
+[2020-09-07 11:20:21,998] {producer.py:29} INFO - 0
+[2020-09-07 11:20:21,998] {producer.py:30} INFO - 1
+[2020-09-07 11:20:22,000] {producer.py:28} INFO - my-site-3
+[2020-09-07 11:20:22,000] {producer.py:29} INFO - 0
+[2020-09-07 11:20:22,001] {producer.py:30} INFO - 1
+[2020-09-07 11:20:22,002] {kafka.py:471} INFO - Closing the Kafka producer with 0 secs timeout.
+[2020-09-07 11:20:22,002] {kafka.py:489} INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
