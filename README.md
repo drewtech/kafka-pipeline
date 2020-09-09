@@ -1,4 +1,4 @@
-## Kafka processing with python and S3 - A example datapipeline
+## Kafka processing with python - A example datapipeline
 
 Add json to messages.txt.
 The producer will pick them up, then transformer with change the data, add to another pipeline, onto a 3rd consumer.
