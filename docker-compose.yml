@@ -42,46 +42,46 @@ services:
     depends_on:
       - "kafka"
 
-  python-transformer:
-    build: ./src/python-transformer
-    image: python-transformer:v1 
-    volumes:
-      - ./logs:/app/logs
-    environment:
-      KAFKA_BROKER: "kafka:29092"
-      KAFKA_TOPIC_PATTERN: "^my-site.*"
-      KAFKA_GROUP: "xml-transformer-group"
-      KAFKA_TOPIC: "xml-topic"
-    depends_on: 
-      - "kafka"
-      - "localstack"
+  # python-transformer:
+  #   build: ./src/python-transformer
+  #   image: python-transformer:v1 
+  #   volumes:
+  #     - ./logs:/app/logs
+  #   environment:
+  #     KAFKA_BROKER: "kafka:29092"
+  #     KAFKA_TOPIC_PATTERN: "^my-site.*"
+  #     KAFKA_GROUP: "xml-transformer-group"
+  #     KAFKA_TOPIC: "xml-topic"
+  #   depends_on: 
+  #     - "kafka"
+  #     - "localstack"
 
-  python-consumer:
-    build: ./src/python-consumer
-    image: python-consumer:v1 
-    volumes:
-      - ./data:/app/data
-      - ./logs:/app/logs
-    environment:
-      KAFKA_BROKER: "kafka:29092"
-      AWS_REGION: "ap-southeast-2"
-      AWS_ACCESS_KEY: "ABC"  
-      AWS_SECRET_ACCESS_KEY: "DFG"
-      AWS_S3_ENDPOINT: "http://localhost:4566"
-      KAFKA_TOPIC: "xml-topic"
-      KAFKA_GROUP: "xml-group"
-    depends_on: 
-      - "kafka"
-      - "localstack"
+  # python-consumer:
+  #   build: ./src/python-consumer
+  #   image: python-consumer:v1 
+  #   volumes:
+  #     - ./data:/app/data
+  #     - ./logs:/app/logs
+  #   environment:
+  #     KAFKA_BROKER: "kafka:29092"
+  #     AWS_REGION: "ap-southeast-2"
+  #     AWS_ACCESS_KEY: "ABC"  
+  #     AWS_SECRET_ACCESS_KEY: "DFG"
+  #     AWS_S3_ENDPOINT: "http://localhost:4566"
+  #     KAFKA_TOPIC: "xml-topic"
+  #     KAFKA_GROUP: "xml-group"
+  #   depends_on: 
+  #     - "kafka"
+  #     - "localstack"
 
-  python-producer:
-    build: ./src/python-producer
-    image: python-producer:v1
-    volumes:
-      - ./logs:/app/logs
-    environment:
-      KAFKA_BROKER: "kafka:29092" 
-    depends_on: 
-      - "kafka"
-      - "python-transformer"
-      - "python-consumer"
+  # python-producer:
+  #   build: ./src/python-producer
+  #   image: python-producer:v1
+  #   volumes:
+  #     - ./logs:/app/logs
+  #   environment:
+  #     KAFKA_BROKER: "kafka:29092" 
+  #   depends_on: 
+  #     - "kafka"
+  #     - "python-transformer"
+  #     - "python-consumer"
